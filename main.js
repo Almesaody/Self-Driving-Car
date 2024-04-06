@@ -12,7 +12,7 @@ const N = 1;
 const cars = generateCars(N);
 let bestCar = cars[0];
 if(localStorage.getItem("bestBrain")) {
-    for(let i =0; i < cars.length; i++) {
+    for(let i = 0; i < cars.length; i++) {
         cars[i].brain = JSON.parse(
             localStorage.getItem("bestBrain"));
         if (i != 0) {
